@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Objeto que almacena las contraseñas y sus destinos
     const PASSWORDS = {
-        "mayte": "home.html",
+        "may": "home.html",
         "25/06/25": "heart.html",
         "princesa": "juego.html"
     };
@@ -36,4 +36,5 @@ $(document).ready(function() {
     $('#openAlertBtn').on('click', function() {
         showPasswordPrompt();
     });
+
 });
