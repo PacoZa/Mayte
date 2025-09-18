@@ -218,6 +218,8 @@
     dino = document.querySelector(".dino");
     // Escucha el evento de la tecla para saltar
     document.addEventListener("keydown", HandleKeyDown);
+    contenedor.addEventListener("touchstart", Saltar);
+
   }
 
   function Update() {
@@ -408,4 +410,5 @@
   }
 </script>
 </body>
+
 </html>
