@@ -77,20 +77,20 @@ body {
     background: radial-gradient(#4c0c0c, #000) !important;
 }
 
-
 .heart {
-  background-color: #ff69b4; /* Color del corazón */
+  background-color: #ff0000; /* Rojo */
   height: 100px;
   width: 100px;
   position: relative;
   transform: rotate(-45deg);
-  box-shadow: -10px 10px 90px #ff69b4;
+  box-shadow: -10px 10px 90px #ff0000; /* Sombra roja */
+  animation: heartbeat 1.5s infinite; /* Animación de latido */
 }
 
 .heart::before,
 .heart::after {
   content: "";
-  background-color: #ff69b4;
+  background-color: #ff0000; /* Rojo */
   height: 100px;
   width: 100px;
   position: absolute;
@@ -105,4 +105,22 @@ body {
 .heart::after {
   left: 50px;
   top: 0;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: rotate(-45deg) scale(1);
+  }
+  25% {
+    transform: rotate(-45deg) scale(1.1); 
+  }
+  50% {
+    transform: rotate(-45deg) scale(1);
+  }
+  75% {
+    transform: rotate(-45deg) scale(1.1); 
+  }
+  100% {
+    transform: rotate(-45deg) scale(1);
+  }
 }
